@@ -1,0 +1,19 @@
+Branch/field: main / OAuth homepage, privacy and terms links
+MODIFIED_FILE: C:\Users\AHK\Documents\Codex\2026-09-08\fal\fincelya-site-local\verification\google-domain\MODIFIED_FILE.html
+DIFF_FILE: C:\Users\AHK\Documents\Codex\2026-09-08\fal\fincelya-site-local\verification\google-domain\DIFF_FILE.patch
+VERIFICATION: C:\Users\AHK\Documents\Codex\2026-09-08\fal\fincelya-site-local\verification\google-domain\VERIFICATION.txt
+ROLLBACK: C:\Users\AHK\Documents\Codex\2026-09-08\fal\fincelya-site-local\verification\google-domain\ROLLBACK.sh
+BASELINE command: git show HEAD~1:index.html | Select-String 'Kullanım Koşulları'
+BASELINE input: previous index.html
+BASELINE literal result: no match
+BASELINE exit status: 0
+MODIFIED command: Select-String -Path index.html -Pattern 'Kullanım Koşulları','Google girişi'
+MODIFIED input: current index.html
+MODIFIED literal result: both strings found
+MODIFIED exit status: 0
+ROLLBACK command: copy repository to temporary directory; run ROLLBACK.sh; test terms.html absence and index restoration
+ROLLBACK input: temporary copy
+ROLLBACK literal result: previous index restored; terms.html absent
+ROLLBACK exit status: 0
+Restored behavior/status: temporary copy returned to pre-change homepage; live repository remains changed.
+Commit: d665904b6cf24223d0ace8a049c56bea54015584

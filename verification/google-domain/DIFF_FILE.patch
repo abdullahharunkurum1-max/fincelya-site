@@ -1,0 +1,14 @@
+index.html | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Changes:
+
+index.html
+  @@ -13,7 +13,7 @@
+  -  <section class="hero"><div><div class="eyebrow">AI destekli eğlence ve farkındalık</div><h1>Fincelya</h1><p class="lead">Kahve falı, 78 kartlık tarot, el falı, astroloji, rüya sembolleri ve Pandora sohbeti tek bir zarif deneyimde.</p><div class="links"><a href="privacy.html">Gizlilik ve Destek</a><a href="https://t.me/fincelyasohbet">Telegram Topluluğu</a></div></div><div class="orb" aria-hidden="true"></div></section>
+  -  <section class="grid"><div class="card"><h2>Kahve ve Tarot</h2><p>Fincan ve tabak fotoğraflarından yapay zekâ destekli eğlence yorumları; kapalı 78 kartlık desteden üç kartlık açılımlar.</p></div><div class="card"><h2>Keşfet</h2><p>El falı, astrolojik farkındalık, rüya sözlüğü, günlük hediye, şans çarkı ve geçmiş yorumlar.</p></div><div class="card"><h2>Güvenli Hesap</h2><p>Apple ile zorunlu giriş, Apple StoreKit satın alma doğrulaması, reklamsız deneyim ve uygulamalar arası takip olmadan kullanım.</p></div></section>
+  +  <section class="hero"><div><div class="eyebrow">AI destekli eğlence ve farkındalık</div><h1>Fincelya</h1><p class="lead">Kahve falı, 78 kartlık tarot, el falı, astroloji, rüya sembolleri ve Pandora sohbeti tek bir zarif deneyimde.</p><div class="links"><a href="privacy.html">Gizlilik ve Destek</a><a href="terms.html">Kullanım Koşulları</a><a href="https://t.me/fincelyasohbet">Telegram Topluluğu</a></div></div><div class="orb" aria-hidden="true"></div></section>
+  +  <section class="grid"><div class="card"><h2>Kahve ve Tarot</h2><p>Fincan ve tabak fotoğraflarından yapay zekâ destekli eğlence yorumları; kapalı 78 kartlık desteden üç kartlık açılımlar.</p></div><div class="card"><h2>Keşfet</h2><p>El falı, astrolojik farkındalık, rüya sözlüğü, günlük hediye, şans çarkı ve geçmiş yorumlar.</p></div><div class="card"><h2>Güvenli Hesap</h2><p>Apple, Google veya misafir girişi seçenekleri; Apple StoreKit satın alma doğrulaması ve uygulamalar arası takip olmadan kullanım. Google girişi yalnızca temel profil, e-posta ve hesap kimliği bilgilerini hesabını oluşturmak ve oturumunu sürdürmek için kullanır.</p></div></section>
+     <section class="card"><h2>Topluluk Ödülü</h2><p>Fincelya Telegram topluluğuna katıl, uygulamadaki tek kullanımlık kodu doğrula ve hesabına bir kez 30 elmas kazan.</p><small>Fincelya içerikleri eğlence ve kişisel farkındalık amaçlıdır; profesyonel danışmanlık veya kesin gelecek tahmini değildir.</small></section>
+   </main></body></html>
+  +2 -2
