@@ -1,0 +1,10 @@
+﻿Changed branch/field: main / public website design, Google login disclosure, privacy data categories
+Original SHA256: 444b584efb8364d02da8e1f32a041ffc998cf41ffb514091f0ab995a0053c487
+MODIFIED_FILE: C:\Users\AHK\Documents\Codex\2026-09-08\fal\fincelya-site-local\verification\site-redesign\MODIFIED_FILE.html
+DIFF_FILE: C:\Users\AHK\Documents\Codex\2026-09-08\fal\fincelya-site-local\verification\site-redesign\DIFF_FILE.patch
+VERIFICATION: C:\Users\AHK\Documents\Codex\2026-09-08\fal\fincelya-site-local\verification\site-redesign\VERIFICATION.txt
+ROLLBACK: C:\Users\AHK\Documents\Codex\2026-09-08\fal\fincelya-site-local\verification\site-redesign\ROLLBACK.sh
+BASELINE command: git show HEAD:index.html; input: HEAD:index.html; literal output/result: BASELINE_OK; exit status: 0
+MODIFIED command: python HTML/content validation; input: index.html privacy.html terms.html styles.css logo.png; literal output/result: MODIFIED_OK: 3 HTML parsed; Google login and 4 privacy categories present; CSS/logo present; exit status: 0
+ROLLBACK command: bash verification/site-redesign/ROLLBACK.sh; input: isolated repository copy; literal output/result: ROLLBACK_OK; ROLLBACK_VERIFIED: original homepage restored; redesign assets removed; exit status: 0
+
