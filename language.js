@@ -2,7 +2,7 @@
 (() => {
   const pairs = [
     ['Özellikler','Features','Funktionen'],['Hesap','Account','Konto'],['Gizlilik','Privacy','Datenschutz'],['Destek','Support','Support'],
-    ['✦ Yapay zekâ destekli kişisel keşif','✦ AI-assisted personal discovery','✦ KI-gestützte persönliche Entdeckung'],
+    ['✦ Sezgisel ve kişisel keşif','✦ Intuitive personal discovery','✦ Intuitive persönliche Entdeckung'],
     ['Her fincan,','Every cup,','Jede Tasse,'],['bin ihtimal.','a thousand possibilities.','tausend Möglichkeiten.'],
     ['Sezgilerinle teknolojiyi buluşturan Fincelya; kahve falından tarota, el falından astrolojiye uzanan zengin ve zarif bir keşif deneyimi sunar.','Fincelya brings intuition and technology together in an elegant journey through coffee readings, tarot, palm reading and astrology.','Fincelya verbindet Intuition und Technologie zu einer stilvollen Entdeckungsreise durch Kaffeesatzdeutung, Tarot, Handlesen und Astrologie.'],
     ['Deneyimi keşfet →','Explore the experience →','Entdecke das Erlebnis →'],['Gizlilik yaklaşımımız','Our privacy approach','Unser Datenschutzansatz'],
