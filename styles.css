@@ -4,3 +4,5 @@
 
 :where(a,button,[tabindex],input,select,textarea):focus-visible{outline:3px solid #ffe08d;outline-offset:4px;border-radius:10px}.anchor{display:block;scroll-margin-top:24px}.language-summary{scroll-margin-top:24px}
 @media(max-width:650px){.site-header nav a[href="./"]{display:inline!important}.site-header nav{gap:10px}.site-header nav a{font-size:13px}.site-header .nav-cta{padding:8px 12px}}
+
+.icon svg{width:30px;height:30px;fill:none;stroke:#fff7e8;stroke-width:2.25;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 2px 8px rgba(255,255,255,.16))}.icon svg use[href$="#tarot"]{stroke-width:2}.auth-logo{width:20px;height:20px;flex:0 0 20px}.apple-logo{fill:#111}.mock{gap:11px}.phone-card>img{image-rendering:auto}.brand img,.login-logo img{image-rendering:auto}

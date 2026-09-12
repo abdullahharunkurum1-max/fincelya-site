@@ -1,0 +1,10 @@
+﻿Changed branch/field: main / HD brand artwork, feature icon system, Apple and Google sign-in marks
+Original SHA256: 6c97113678eb7d85b2cc38b68ad7b67f0191f657415dd4143835c0559d519010
+MODIFIED_FILE: C:\Users\AHK\Documents\Codex\2026-09-08\fal\fincelya-site-local\verification\visual-assets\MODIFIED_FILE.png
+DIFF_FILE: C:\Users\AHK\Documents\Codex\2026-09-08\fal\fincelya-site-local\verification\visual-assets\DIFF_FILE.patch
+VERIFICATION: C:\Users\AHK\Documents\Codex\2026-09-08\fal\fincelya-site-local\verification\visual-assets\VERIFICATION.txt
+ROLLBACK: C:\Users\AHK\Documents\Codex\2026-09-08\fal\fincelya-site-local\verification\visual-assets\ROLLBACK.sh
+BASELINE command: certutil -hashfile ORIGINAL_logo.png SHA256; input: original 120px logo; literal output/result: 6c97113678eb7d85b2cc38b68ad7b67f0191f657415dd4143835c0559d519010; exit status: 0
+MODIFIED command: Python PIL/HTML validation; input: logo-hd.png index.html icons.svg; literal output/result: MODIFIED_OK: HD logo (1254, 1254) 6 SVG feature icons; official Apple/Google marks; exit status: 0
+ROLLBACK command: Git Bash ROLLBACK.sh; input: isolated repository copy; literal output/result: ROLLBACK_OK; ROLLBACK_VERIFIED: previous HTML/CSS restored; new visual assets removed; exit status: 0
+

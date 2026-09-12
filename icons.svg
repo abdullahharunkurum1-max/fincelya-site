@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="coffee" viewBox="0 0 48 48"><path d="M8 17h27v12a11 11 0 0 1-11 11h-5A11 11 0 0 1 8 29V17Z"/><path d="M35 20h3a6 6 0 0 1 0 12h-4M5 42h34M15 12c-3-3 3-5 0-8m9 8c-3-3 3-5 0-8"/></symbol>
+<symbol id="tarot" viewBox="0 0 48 48"><rect x="7" y="9" width="27" height="34" rx="4" transform="rotate(-7 7 9)"/><rect x="15" y="5" width="27" height="34" rx="4"/><path d="m28.5 14 2.5 5.5 5.5 2.5-5.5 2.5-2.5 5.5-2.5-5.5-5.5-2.5 5.5-2.5 2.5-5.5Z"/></symbol>
+<symbol id="palm" viewBox="0 0 48 48"><path d="M15 23V10a3 3 0 0 1 6 0v10M21 20V7a3 3 0 0 1 6 0v13M27 20V9a3 3 0 0 1 6 0v14M33 23v-8a3 3 0 0 1 6 0v15c0 9-6 14-14 14-7 0-11-4-14-9L6 27a3.5 3.5 0 0 1 6-3l3 4"/></symbol>
+<symbol id="astro" viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M24 7v34M7 24h34M12 13c8 7 16 7 24 0M12 35c8-7 16-7 24 0M24 7c8 9 8 25 0 34M24 7c-8 9-8 25 0 34"/><path d="m39 6 1.4 3.6L44 11l-3.6 1.4L39 16l-1.4-3.6L34 11l3.6-1.4L39 6Z"/></symbol>
+<symbol id="chat" viewBox="0 0 48 48"><path d="M7 9h34v25H22l-10 8v-8H7V9Z"/><path d="M15 19h18M15 26h12"/></symbol>
+<symbol id="dream" viewBox="0 0 48 48"><path d="M34 34a16 16 0 1 1-5-29 14 14 0 0 0 5 29Z"/><path d="m36 8 1.5 4L42 14l-4.5 2-1.5 4-1.5-4-4.5-2 4.5-2L36 8Zm6 16 .8 2.2L45 27l-2.2.8L42 30l-.8-2.2L39 27l2.2-.8L42 24Z"/></symbol>
+</svg>
