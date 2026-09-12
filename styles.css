@@ -6,3 +6,5 @@
 @media(max-width:650px){.site-header nav a[href="./"]{display:inline!important}.site-header nav{gap:10px}.site-header nav a{font-size:13px}.site-header .nav-cta{padding:8px 12px}}
 
 .icon svg{width:30px;height:30px;fill:none;stroke:#fff7e8;stroke-width:2.25;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 2px 8px rgba(255,255,255,.16))}.icon svg use[href$="#tarot"]{stroke-width:2}.auth-logo{width:20px;height:20px;flex:0 0 20px}.apple-logo{fill:#111}.mock{gap:11px}.phone-card>img{image-rendering:auto}.brand img,.login-logo img{image-rendering:auto}
+
+.shield{position:relative;overflow:visible;background:linear-gradient(145deg,#ffe391,#ffad37);box-shadow:0 12px 28px rgba(255,175,55,.24),inset 0 1px 0 rgba(255,255,255,.6)}.shield:after{content:"";position:absolute;inset:-7px;border:1px solid rgba(248,202,103,.22);border-radius:22px}.shield svg{width:33px;height:33px;fill:none;stroke:#35122f;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 1px 0 rgba(255,255,255,.45))}.shield svg .spark{fill:#fff3bd;stroke:#7a2d5e;stroke-width:1.5}
