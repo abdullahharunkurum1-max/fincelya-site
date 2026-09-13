@@ -15,7 +15,7 @@
     const light = theme === 'light';
     button.setAttribute('aria-pressed', String(light));
     button.setAttribute('aria-label', light ? 'Koyu moda geç' : 'Açık moda geç');
-    button.querySelector('.theme-toggle-icon').textContent = light ? '☾' : '☀';
+    button.dataset.mode = light ? 'light' : 'dark';
   };
 
   apply(initial);
@@ -28,4 +28,5 @@
     });
   });
 })();
+
 
