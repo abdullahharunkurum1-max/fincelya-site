@@ -8,7 +8,7 @@
     ['Deneyimi keşfet →','Explore the experience →','Entdecke das Erlebnis →'],['Gizlilik yaklaşımımız','Our privacy approach','Unser Datenschutzansatz'],
     ['✓ Apple ile giriş','✓ Sign in with Apple','✓ Mit Apple anmelden'],['✓ Google ile giriş','✓ Sign in with Google','✓ Mit Google anmelden'],['✓ Güvenli hesap','✓ Secure account','✓ Sicheres Konto'],
     ['GÜNÜN ENERJİSİ',"TODAY'S ENERGY",'ENERGIE DES TAGES'],['İçindeki sese güven.','Trust your inner voice.','Vertraue deiner inneren Stimme.'],['Bugün yeni ihtimaller için alan aç.','Make room for new possibilities today.','Schaffe heute Raum für neue Möglichkeiten.'],
-    ['Tarot kartı','Tarot cards','Tarotkarten'],['Benzersiz falcı','Distinct readers','Verschiedene Deuterinnen'],['Türkçe deneyim','Turkish experience','Türkisches Erlebnis'],['Yeni ihtimal','New possibilities','Neue Möglichkeiten'],
+    ['Tarot kartı','Tarot cards','Tarotkarten'],['Benzersiz falcı','Distinct readers','Verschiedene Deuterinnen'],['Türkçe · English · Deutsch','Türkçe · English · Deutsch','Türkçe · English · Deutsch'],['Yeni ihtimal','New possibilities','Neue Möglichkeiten'],
     ['KEŞFET','DISCOVER','ENTDECKEN'],['Sezgine açılan yollar','Paths to your intuition','Wege zu deiner Intuition'],['Her niyet için farklı, özenle tasarlanmış bir yolculuk.','A thoughtfully designed journey for every intention.','Eine sorgfältig gestaltete Reise für jede Absicht.'],
     ['FİNCANIN HİKÂYESİ','THE STORY IN YOUR CUP','DIE GESCHICHTE DEINER TASSE'],['Kahve Falı','Coffee Reading','Kaffeesatzdeutung'],['Fincan ve tabak fotoğraflarındaki sembolleri, seçtiğin falcının üslubuyla kişisel bir yoruma dönüştür.','Explore the symbols in your cup and saucer photos with your chosen reader’s narrative style.','Entdecke die Symbole auf deinen Tassen- und Untertassenfotos im Erzählstil deiner gewählten Deuterin.'],
     ['GEÇMİŞ · ŞİMDİ · GELECEK','PAST · PRESENT · FUTURE','VERGANGENHEIT · GEGENWART · ZUKUNFT'],['78 kartlık kapalı desteden seçimini yap; kartların mesajını yorumla birlikte keşfet.','Choose from a face-down deck of 78 cards and discover their message with your reading.','Wähle aus 78 verdeckten Karten und entdecke ihre Botschaft mit deiner Deutung.'],
@@ -48,3 +48,4 @@
   if (!['tr','en','de'].includes(selected)) selected = (navigator.languages || [navigator.language]).map(x => x.split('-')[0]).find(x => ['tr','en','de'].includes(x)) || 'en';
   apply(selected);
 })();
+
