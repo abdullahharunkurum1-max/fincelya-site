@@ -11,4 +11,14 @@ async function adjust(targetID,amount,reason){const signature=JSON.stringify({ta
 el('adjustForm').onsubmit=async e=>{e.preventDefault();const button=e.submitter;button.disabled=true;try{await adjust(el('target').value.trim(),Number(el('amount').value),el('reason').value.trim())}catch(e){show(e.message)}finally{button.disabled=false}};
 el('testCredit').onclick=async()=>{el('testCredit').disabled=true;try{const data=await refresh(),own=data.users.find(u=>u.user_id===self);if(!own)throw Error('Kendi hesabınız listede bulunamadı.');const amount=1000000-own.balance;if(amount<=0)return show('Test bakiyeniz zaten yeterli.');await adjust(self,amount,'Yönetici test bakiyesi')}catch(e){show(e.message)}finally{el('testCredit').disabled=false}};
 el('appleProducts').onclick=async()=>{el('appleProducts').disabled=true;try{el('appleResult').textContent=JSON.stringify(await api('/v1/admin/appstore/products'),null,2)}catch(e){el('appleResult').textContent=e.message}finally{el('appleProducts').disabled=false}};
-health();
+async function completeRecovery(){
+  const hash=new URLSearchParams(location.hash.slice(1));
+  if(hash.get('error')){show(hash.get('error_code')==='otp_expired'?'Bu şifre bağlantısının süresi dolmuş. Yeni bağlantı isteyin.':hash.get('error_description')||'Bağlantı geçersiz.');return;}
+  const access=hash.get('access_token');if(!access||hash.get('type')!=='recovery')return;
+  const password=prompt('Fincelya yönetici hesabı için yeni şifrenizi girin (en az 12 karakter):');
+  if(!password)return show('Şifre belirleme iptal edildi.');
+  if(password.length<12)return show('Şifre en az 12 karakter olmalıdır.');
+  try{const config=await(await fetch(API_BASE+'/admin/config')).json();const r=await fetch(config.url+'/auth/v1/user',{method:'PUT',headers:{apikey:config.publishableKey,authorization:`Bearer ${access}`,'content-type':'application/json'},body:JSON.stringify({password})});const data=await r.json();if(!r.ok)throw Error(data.msg||data.message||'Şifre güncellenemedi.');history.replaceState(null,'',location.pathname);token=access;await refresh();show('Şifreniz oluşturuldu ve yönetici oturumu açıldı.');}catch(e){show(e.message)}
+}
+completeRecovery();health();
+
