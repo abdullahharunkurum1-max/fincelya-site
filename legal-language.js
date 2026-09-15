@@ -32,7 +32,11 @@
     document.querySelectorAll('.language-document').forEach(section => { section.hidden = section.lang !== language; });
     document.documentElement.lang = language;
     document.title = (privacy ? rows[5] : rows[8])[index] + ' — Fincelya';
-    links.forEach(link => link.setAttribute('aria-current', link.hash === '#' + language ? 'true' : 'false'));
+    const names = { tr: ['Türkçe', 'İngilizce', 'Almanca'], en: ['Turkish', 'English', 'German'], de: ['Türkisch', 'Englisch', 'Deutsch'] };
+    links.forEach((link, position) => {
+      link.textContent = names[language][position];
+      link.setAttribute('aria-current', link.hash === '#' + language ? 'true' : 'false');
+    });
     document.querySelectorAll('a[href^="privacy.html"],a[href^="terms.html"]').forEach(link => { link.href = link.getAttribute('href').split('#')[0] + '#' + language; });
     try { localStorage.setItem('fincelya.language', language); } catch {}
     window.dispatchEvent(new Event('fincelya-language-change'));
