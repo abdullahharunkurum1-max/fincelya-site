@@ -10,5 +10,14 @@
 .button.primary, html[data-theme="light"] .button.primary { background: #f4b747; color: #281522; box-shadow: 0 8px 22px rgba(120, 74, 12, .12); }
 .button.primary:hover, html[data-theme="light"] .button.primary:hover { background: #edac35; }
 .button .button-icon { width: 18px; height: 18px; stroke-width: 2.25; }
+.trust { gap: 10px; }
+.trust span { min-height: 38px; padding: 7px 13px; gap: 9px; font-size: 13px; font-weight: 500; color: #eee7ef; background: #221925; border-color: #4a394f; box-shadow: none; }
+.trust svg { width: 18px; height: 18px; flex-shrink: 0; stroke: none; }
+.trust .apple-mark { color: #fff; fill: currentColor; }
+.trust .google-mark { background: #fff; border-radius: 50%; padding: 3px; box-sizing: content-box; }
+.trust .security-mark { color: #dbbb7b; fill: none; }
+html[data-theme="light"] .trust span { color: #382a3b; background: #fff; border-color: #dfd3e2; box-shadow: none; }
+html[data-theme="light"] .trust .apple-mark { color: #181818; }
+html[data-theme="light"] .trust .security-mark { color: #765321; }
 .theme-toggle:focus-visible, .button:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
