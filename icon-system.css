@@ -15,6 +15,7 @@
 .trust svg { width: 18px; height: 18px; flex-shrink: 0; stroke: none; }
 .trust svg, html[data-theme="light"] .trust svg { stroke: none; }
 .intro-languages article[hidden] { display: none; }
+.language-document[hidden] { display: none; }
 .intro-languages { grid-template-columns: 1fr; }
 .trust .apple-mark { color: #fff; fill: currentColor; }
 .trust .google-mark { background: #fff; border-radius: 50%; padding: 3px; box-sizing: content-box; }
