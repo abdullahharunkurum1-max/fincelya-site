@@ -3,6 +3,7 @@ body:not(.signed-in) .layout { display: block; min-height: 100vh; }
 body:not(.signed-in) main { min-height: 100vh; display: grid; align-items: center; }
 body:not(.signed-in) .login-card { width: 100%; margin: 0 auto; }
 body:not(.signed-in) form { margin-top: 0; }
+body:not(.signed-in) #loginForm button { min-height: 40px; }
 @media (max-width: 900px) {
   body:not(.signed-in) .login-mark { display: grid; padding: 28px 0 0; }
 }
