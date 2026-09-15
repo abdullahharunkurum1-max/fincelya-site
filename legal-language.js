@@ -32,7 +32,7 @@
     document.querySelectorAll('.language-document').forEach(section => { section.hidden = section.lang !== language; });
     document.documentElement.lang = language;
     document.title = (privacy ? rows[5] : rows[8])[index] + ' — Fincelya';
-    const names = { tr: ['Türkçe', 'İngilizce', 'Almanca'], en: ['Turkish', 'English', 'German'], de: ['Türkisch', 'Englisch', 'Deutsch'] };
+    const names = { tr: ['Türkçe', 'English', 'Deutsch'], en: ['Türkçe', 'English', 'Deutsch'], de: ['Türkçe', 'English', 'Deutsch'] };
     links.forEach((link, position) => {
       link.textContent = names[language][position];
       link.setAttribute('aria-current', link.hash === '#' + language ? 'true' : 'false');
