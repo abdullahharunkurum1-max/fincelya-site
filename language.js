@@ -1,6 +1,9 @@
 /* Translate text nodes without replacing the existing layout, icons or links. */
 (() => {
   const pairs = [
+    ['Sezgisel ve kişisel keşif','Intuitive personal discovery','Intuitive persönliche Entdeckung'],
+    ['Deneyimi keşfet','Explore the experience','Entdecke das Erlebnis'],
+    ['Güvenli hesap','Secure account','Sicheres Konto'],
     ['Özellikler','Features','Funktionen'],['Hesap','Account','Konto'],['Gizlilik','Privacy','Datenschutz'],['Destek','Support','Support'],
     ['✦ Sezgisel ve kişisel keşif','✦ Intuitive personal discovery','✦ Intuitive persönliche Entdeckung'],
     ['Her fincan,','Every cup,','Jede Tasse,'],['bin ihtimal.','a thousand possibilities.','tausend Möglichkeiten.'],
@@ -35,6 +38,9 @@
     const index = ['tr','en','de'].indexOf(language);
     for (const [node, key] of nodes) node.textContent = node.textContent.replace(node.textContent.trim(), dictionary.get(key)[index]);
     document.documentElement.lang = language;
+    document.querySelectorAll('.intro-languages article').forEach(article => { article.hidden = article.lang !== language; });
+    document.querySelector('.intro-languages')?.setAttribute('aria-label', ['Fincelya hakkında','About Fincelya','Über Fincelya'][index]);
+    window.dispatchEvent(new Event('fincelya-language-change'));
     document.title = ['Fincelya — Sezgine Kulak Ver','Fincelya — Listen to Your Intuition','Fincelya — Höre auf deine Intuition'][index];
     document.querySelector('meta[name="description"]').content = ['Fincelya ile kahve falı, tarot, el falı, astroloji ve rüya sembollerini keşfet.','Discover coffee readings, tarot, palm reading, astrology and dream symbols with Fincelya.','Entdecke Kaffeesatzdeutung, Tarot, Handlesen, Astrologie und Traumsymbole mit Fincelya.'][index];
     document.querySelector('.hero-visual img').alt = ['Fincelya fincan, yıldız ve kristal küre logosu','Fincelya cup, star and crystal ball logo','Fincelya-Logo mit Tasse, Stern und Kristallkugel'][index];

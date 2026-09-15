@@ -13,6 +13,9 @@
 .trust { gap: 10px; }
 .trust span { min-height: 38px; padding: 7px 13px; gap: 9px; font-size: 13px; font-weight: 500; color: #eee7ef; background: #221925; border-color: #4a394f; box-shadow: none; }
 .trust svg { width: 18px; height: 18px; flex-shrink: 0; stroke: none; }
+.trust svg, html[data-theme="light"] .trust svg { stroke: none; }
+.intro-languages article[hidden] { display: none; }
+.intro-languages { grid-template-columns: 1fr; }
 .trust .apple-mark { color: #fff; fill: currentColor; }
 .trust .google-mark { background: #fff; border-radius: 50%; padding: 3px; box-sizing: content-box; }
 .trust .security-mark { color: #dbbb7b; fill: none; }

@@ -15,11 +15,13 @@
     if (!button) return;
     const light = theme === 'light';
     button.setAttribute('aria-pressed', String(light));
-    button.setAttribute('aria-label', light ? 'Koyu moda geç' : 'Açık moda geç');
+    const labels = { tr: ['Koyu moda geç', 'Açık moda geç'], en: ['Switch to dark mode', 'Switch to light mode'], de: ['Zum dunklen Modus wechseln', 'Zum hellen Modus wechseln'] };
+    button.setAttribute('aria-label', (labels[root.lang] || labels.tr)[light ? 0 : 1]);
     button.dataset.mode = light ? 'light' : 'dark';
   };
 
   apply(initial);
+  addEventListener('fincelya-language-change', () => apply(root.dataset.theme || initial));
   addEventListener('DOMContentLoaded', () => {
     apply(root.dataset.theme || initial);
     document.querySelector('.theme-toggle')?.addEventListener('click', () => {
