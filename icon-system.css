@@ -7,5 +7,8 @@
 [data-theme="light"] .feature .icon { color: #44264f; background: #fff; border-color: #d9c9df; }
 [data-theme="light"] .community-icon { color: #44264f; background: #fff; border-color: #d9c9df; }
 .button svg { width: 20px; height: 20px; flex-shrink: 0; }
+.button.primary, html[data-theme="light"] .button.primary { background: #f4b747; color: #281522; box-shadow: 0 8px 22px rgba(120, 74, 12, .12); }
+.button.primary:hover, html[data-theme="light"] .button.primary:hover { background: #edac35; }
+.button .button-icon { width: 18px; height: 18px; stroke-width: 2.25; }
 .theme-toggle:focus-visible, .button:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
