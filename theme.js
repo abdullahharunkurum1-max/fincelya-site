@@ -1,7 +1,8 @@
 (() => {
   const storageKey = 'fincelya-theme';
   const root = document.documentElement;
-  const saved = localStorage.getItem(storageKey);
+  let saved;
+  try { saved = localStorage.getItem(storageKey); } catch {}
   const preferred = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
   const initial = saved === 'light' || saved === 'dark' ? saved : preferred;
 
@@ -23,7 +24,7 @@
     apply(root.dataset.theme || initial);
     document.querySelector('.theme-toggle')?.addEventListener('click', () => {
       const next = root.dataset.theme === 'light' ? 'dark' : 'light';
-      localStorage.setItem(storageKey, next);
+      try { localStorage.setItem(storageKey, next); } catch {}
       apply(next);
     });
   });

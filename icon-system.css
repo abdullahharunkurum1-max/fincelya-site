@@ -1,0 +1,11 @@
+/* Shared, theme-aware interface icons. No external fonts or runtime dependencies. */
+.feature .icon { color: #eee6fa; background: #271a36; border: 1px solid #564165; border-radius: 14px; box-shadow: none; }
+.feature .icon::after { display: none; }
+.feature .icon svg { width: 28px; height: 28px; stroke: currentColor; filter: none; }
+.community-icon { color: #f8e8bf; background: #312438; border: 1px solid #66506c; border-radius: 16px; box-shadow: none; }
+.community-icon svg { width: 30px; height: 30px; stroke: currentColor; }
+[data-theme="light"] .feature .icon { color: #44264f; background: #fff; border-color: #d9c9df; }
+[data-theme="light"] .community-icon { color: #44264f; background: #fff; border-color: #d9c9df; }
+.button svg { width: 20px; height: 20px; flex-shrink: 0; }
+.theme-toggle:focus-visible, .button:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
